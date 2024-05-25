@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pandas on Lin Htet Win</title>
+    <link>//localhost:1313/tags/pandas/</link>
+    <description>Recent content in Pandas on Lin Htet Win</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MedScan Insight</title>
+      <link>//localhost:1313/projects/medscan_insight/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/medscan_insight/</guid>
+      <description>About application This project represents the culmination of my academic journey as a Bachelor&amp;rsquo;s degree student, serving as the final year project that synthesizes and applies the knowledge and skills acquired throughout my undergraduate studies.&#xA;MedScan Insight is a web application designed to predict the diseases with the user&amp;rsquo;s symptoms. It utilized machine learning to predict the diseases and build upon the Flask framework. The dataset to train and test was obtained from the Kaggle dataset Predict Disease Symptom.</description>
+    </item>
+    <item>
+      <title>SpaceX Rocket Analysis</title>
+      <link>//localhost:1313/projects/spacex/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/spacex/</guid>
+      <description>This is the final capstone project where I have to utilize the data analysis tools that i learned from IBM data science. The things I have to do in this project are&#xA;Data collection with api and webscraping Data Wrangling Exploratory Data Analysis using SQL EDA Data Visualization Using Python Pandas and Matplotlib Launch Sites Analysis with Folium-Interactive Visual Analytics and PlotyDash Machine Learning Landing Prediction Data collection with api First, I request the necessary data from the SpaceX REST API.</description>
+    </item>
+  </channel>
+</rss>

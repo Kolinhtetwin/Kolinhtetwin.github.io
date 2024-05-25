@@ -1,0 +1,15 @@
+#flex-container {
+    display:flex;
+    flex-direction:column;
+ 
+    /* fallback height */
+    min-height:90vh;
+ 
+    /* new small viewport height for modern browsers */
+    min-height:90svh;
+
+    overflow-y: hidden;
+ }
+ #flex-container > footer {
+    margin-top:auto;
+ }
