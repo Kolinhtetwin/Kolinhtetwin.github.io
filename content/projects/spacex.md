@@ -34,11 +34,11 @@ This is the final capstone project where I have to utilize the data analysis too
 ## Data collection with api 
 First, I request the necessary data from the SpaceX REST API.
 
-![Request Data from SpaceX Rest API](/projects/request_api.png)
+![Request Data from SpaceX Rest API](/projects/spacex/request_api.png)
 
 Then, I use json_normalize meethod to convert the json result into a panda dataframe. 
 
-![Normalize Data into Dataframe](/projects/normalize_json.png)
+![Normalize Data into Dataframe](/projects/spacex/normalize_json.png)
 
 Then, I analyze the features and labels of the dataset. Finally, I filter the dataset to include only Falcon 9 launches.
 
