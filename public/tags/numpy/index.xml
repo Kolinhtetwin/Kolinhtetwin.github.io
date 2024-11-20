@@ -13,7 +13,7 @@
       <link>//localhost:1313/projects/spacex/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/projects/spacex/</guid>
-      <description>This is the final capstone project where I have to utilize the data analysis tools that i learned from IBM data science. The things I have to do in this project are&#xA;Data collection with api and webscraping Data Wrangling Exploratory Data Analysis using SQL EDA Data Visualization Using Python Pandas and Matplotlib Launch Sites Analysis with Folium-Interactive Visual Analytics and PlotyDash Machine Learning Landing Prediction Data collection with api First, I request the necessary data from the SpaceX REST API.</description>
+      <description>This is the final capstone project where I have to utilize the data analysis tools that I learned from IBM Data Science. The things I have to do in this project are:&#xA;Data collection with API and web scraping Data wrangling Exploratory data analysis using SQL EDA data visualization using Python Pandas and Matplotlib Launch sites analysis with Folium-Interactive Visual Analytics and Plotly Dash Machine learning landing prediction Data collection with API and web scraping First, I request the necessary data from the SpaceX REST API.</description>
     </item>
   </channel>
 </rss>

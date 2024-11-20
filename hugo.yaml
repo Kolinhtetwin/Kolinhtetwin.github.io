@@ -24,7 +24,7 @@ params:
   title: "Lin Htet Win"
   description: My portfolio website
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "/logo.png"
   
   animate: true
 
@@ -60,7 +60,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Lin Htet Win"
-    subtitle: "I Dive Deep into Data."
+    subtitle: "Passionate Data Analyst"
     content: "A passionate data analyst. I tend to make use of complex data to build the comprehensive models and insightful visualizations that illuminate trends and patterns."
     image: /images/linhtetwin_about_crop.jpg
     bottomImage:
@@ -82,7 +82,7 @@ params:
   # About
   about:
     enable: true
-    title: "About Me"
+    title: "About me"
     image: "/images/linhtetwin_about_crop.jpg"
     content: |-
       I am a recent graduate with a keen interest in data science and analytics. My academic background includes studies in computer science and mathematics, and I possess proficiency in Python and HTML. I am currently enhancing my analytical capabilities through hands-on experience with Microsoft Power BI.
@@ -181,7 +181,7 @@ params:
   contact:
     enable: true
     # title: "Custom Name"
-    content: Please feel free to reach out at any time. Whether you have a job offer, just want to chat or simply want to discuss potential opportunities, I'm here and ready to engage in conversation! You can contact me at linhtetwin.mm@gmail.com or fill the form below.
+    content: Please feel free to reach out at any time. Whether you have a job offer, just want to chat or simply want to discuss potential opportunities, I'm here and ready to engage in conversation! You can contact me at (+95) 9441254246 / linhtetwin.mm@gmail.com or fill the form below.
     btnName: Mail me
     formspree:
       enable: true # `contact.email` value will be ignored

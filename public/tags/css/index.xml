@@ -13,7 +13,7 @@
       <link>//localhost:1313/projects/medscan_insight/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/projects/medscan_insight/</guid>
-      <description>About application This project represents the culmination of my academic journey as a Bachelor&amp;rsquo;s degree student, serving as the final year project that synthesizes and applies the knowledge and skills acquired throughout my undergraduate studies.&#xA;MedScan Insight is a web application designed to predict the diseases with the user&amp;rsquo;s symptoms. It utilized machine learning to predict the diseases and build upon the Flask framework. The dataset to train and test was obtained from the Kaggle dataset Predict Disease Symptom.</description>
+      <description>About application This project represents the culmination of my academic journey as a Bachelor&amp;rsquo;s degree student, serving as the final year project that synthesizes and applies the knowledge and skills acquired throughout my undergraduate studies.&#xA;MedScan Insight is a web application designed to predict diseases based on the user&amp;rsquo;s symptoms. It utilizes machine learning to make predictions and is built on the Flask framework. The dataset used for training and testing was obtained from the Kaggle dataset Predict Disease Symptom.</description>
     </item>
   </channel>
 </rss>
