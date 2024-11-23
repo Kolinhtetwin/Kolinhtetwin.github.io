@@ -71,7 +71,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://drive.google.com/uc?export=download&id=1gmhRsgjGws53fScLCETxWgzF3d_YY1Um"
+      url: "https://drive.google.com/file/d/1CEB02B6pYYTocUi0M6Wl21h1lCMjbZQK/view?usp=sharing"
       download: true
       newPage: true
     socialLinks:
