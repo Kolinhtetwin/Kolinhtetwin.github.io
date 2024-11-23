@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/logo.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:title" content="Exploring Sales and Customer Insights with Tableau" />
+<meta property="og:description" content="A web application designed to predict the disease with symptoms." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="//localhost:1313/projects/sales_dashboard/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2023-11-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-11-20T00:00:00+00:00" /><meta property="og:site_name" content="Lin Htet Win" />
+
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Exploring Sales and Customer Insights with Tableau"/>
+<meta name="twitter:description" content="A web application designed to predict the disease with symptoms."/>
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+<meta name="description" content="A web application designed to predict the disease with symptoms.">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+  <title>
+Exploring Sales and Customer Insights with Tableau | Lin Htet Win
+
+  </title>
+  <link rel="stylesheet" href="/css/404.css">
+</head>
+
+<body class="light">
+  
+  
+  <script src="/js/arrow.js"></script>
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;        
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="//localhost:1313/">
+                
+                Lin Htet Win
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:1313/#about" aria-label="about">
+                            About me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:1313/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:1313/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:1313/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:1313/#achievements"
+                            aria-label="achievements">
+                            Certificates
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:1313/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="flex-container">
+    <div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Exploring Sales and Customer Insights with Tableau</h1>
+            <div class="text-center">
+              Lin Htet Win 
+              <small>|</small>
+              Nov 20, 2023
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <div class="featured-image">
+            <img class="img-fluid mx-auto d-block" src="/projects/sales_dashboard/sales_dashboard%20title%20picture.jpg" alt="Exploring Sales and Customer Insights with Tableau" style="width: 45%; height: auto;">
+          </div>
+          
+          <article class="page-content  p-2">
+          <p>In today’s data-driven world, businesses thrive on visual analytics to make informed
+decisions. I&rsquo;m thrilled to showcase two dynamic dashboards (view <a href="https://public.tableau.com/views/Sales_Dashboard_17322898738320/SalesDashboard?:language=en-GB&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link">here</a>) that I created during my
+Tableau learning journey with <strong>Data with Baraa</strong>. These dashboards provide comprehensive
+insights into sales performance and customer metrics, empowering businesses to make
+data-driven decisions. Let&rsquo;s explore the specifics of these projects and discover
+how you can leverage these insights.</p>
+<hr>
+<h3 id="project-overview">Project Overview</h3>
+<p>The primary goal of these dashboards was to analyze and track performance in 2023
+compared to 2022. This project features two key dashboards: Sales Analysis and
+Customer Analysis, aiming to deliver a view of:</p>
+<ul>
+<li>Sales Trends (via the Sales Dashboard)</li>
+<li>Customer Behavior and Profitability (via the Customer Dashboard)</li>
+</ul>
+<h4 id="sales-analysis-dashboard">Sales Analysis Dashboard</h4>
+<p>The Sales Analysis dashboard includes several essential components:</p>
+<ul>
+<li><strong>Total Sales</strong>: Displays the total sales amount with a percentage change compared to the previous year.</li>
+<li><strong>Total Profit</strong>: Shows the total profit earned and its year-over-year growth.</li>
+<li><strong>Total Quantity</strong>: Indicates the total quantity of items sold.</li>
+<li><strong>Sales by Subcategory</strong>: A bar chart that breaks down sales by different product subcategories.</li>
+<li><strong>Sales Trends</strong>: A line chart illustrating sales trends over time, highlighting peaks and troughs.</li>
+</ul>
+<h4 id="customer-analysis-dashboard">Customer Analysis Dashboard</h4>
+<p>The Customer Analysis dashboard features:</p>
+<ul>
+<li><strong>Total Customers</strong>: Displays the total number of customers and the percentage change from the previous year.</li>
+<li><strong>Total Sales Per Customer</strong>: Shows the average sales amount per customer and its year-over-year growth.</li>
+<li><strong>Total Orders</strong>: Indicates the total number of orders and their growth compared to the previous year.</li>
+<li><strong>Customer Distribution by Number of Orders</strong>: A bar chart showing how many customers made one, two, or more orders.</li>
+<li><strong>Top 10 Customers by Profit</strong>: A table listing the top 10 customers by profit, including their last order date, profit, sales, and number of orders.</li>
+</ul>
+<hr>
+<h3 id="key-insights">Key Insights</h3>
+<h4 id="sales-analysis-dashboard-insights">Sales Analysis Dashboard Insights</h4>
+<p><img src="/projects/sales_dashboard/Sales_dashboard.png" alt="Sales Dashboard"></p>
+<p>One of the key insights from the Sales Dashboard is the achievement of $733K in total sales, a 20.4% increase from 2022, demonstrating the success of the sales strategy and strong market presence. Over the year, sales trends show clear fluctuations, with identifiable high and low-performing months. These patterns offer valuable opportunities to plan marketing campaigns and optimize inventory. The subcategory breakdown highlights phones and chairs as top-performing categories, underscoring their importance for driving growth. Conversely, categories such as labels and envelopes continue to underperform, signaling the need for strategic adjustments.</p>
+<h4 id="customer-analysis-dashboard-insights">Customer Analysis Dashboard Insights</h4>
+<p><img src="/projects/sales_dashboard/Customer_dashboard.png" alt="Customer Dashboard"></p>
+<p>The Customer Dashboard shows an 8.6% increase in total customers and a 28.3% rise in total orders, reflecting successful customer acquisition and growing engagement. However, a deeper analysis of order frequency per customer shows the potential to further grow average order frequency through targeted campaigns like subscription services or bundle offers. The top 10 customers contribute significantly to both profit and sales. Creating exclusive programs or providing personalized service for these customers could strengthen loyalty and further increase their contribution.</p>
+<hr>
+<h3 id="technical-details">Technical Details</h3>
+<p>To create these dashboards, I used data provided by Data with Baraa, including transaction details from the past three years. I leveraged Tableau&rsquo;s powerful data blending capabilities to combine multiple data sources and used calculated fields to derive key metrics such as year-over-year growth and profit margins. Interactive elements like filters allow users to drill down into specific time periods and product categories.</p>
+<hr>
+<h3 id="interactive-elements">Interactive Elements</h3>
+<p>The dashboards are designed with user interactivity in mind:</p>
+<ul>
+<li><strong>Filters</strong>: Enable users to refine data by year, region, or category.</li>
+<li><strong>Tooltips</strong>: Provide additional context on hover, making it easier to understand data points.</li>
+<li><strong>Color Coding</strong>: Highlights trends, anomalies, and areas requiring attention, improving decision-making efficiency.</li>
+</ul>
+<hr>
+<h3 id="conclusion">Conclusion</h3>
+<p>In conclusion, these sales and customer analysis dashboards serve as powerful tools for visualizing key business metrics and uncovering actionable insights. I hope you find them as valuable as I do in making data-driven decisions. Feel free to explore the interactive dashboards yourself <a href="https://public.tableau.com/views/Sales_Dashboard_17322898738320/SalesDashboard?:language=en-GB&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link">here</a>. If you have any questions or feedback, please leave a comment or reach out to me directly.</p>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#project-overview">Project Overview</a></li>
+        <li><a href="#key-insights">Key Insights</a></li>
+        <li><a href="#technical-details">Technical Details</a></li>
+        <li><a href="#interactive-elements">Interactive Elements</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="//localhost:1313/tags/tableau" target="_blank">Tableau</a></li>
+              
+              <li class="list-inline-item"><a href="//localhost:1313/tags/data-visualization" target="_blank">Data Visualization</a></li>
+              
+              <li class="list-inline-item"><a href="//localhost:1313/tags/interactive-dashboards" target="_blank">Interactive Dashboards</a></li>
+              
+              <li class="list-inline-item"><a href="//localhost:1313/tags/storytelling" target="_blank">Storytelling</a></li>
+              
+              <li class="list-inline-item"><a href="//localhost:1313/tags/sql" target="_blank">SQL</a></li>
+              
+              <li class="list-inline-item"><a href="//localhost:1313/tags/flask" target="_blank">Flask</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="Share on social">
+            <h5>Share on Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=%2f%2flocalhost%3a1313%2fprojects%2fsales_dashboard%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=Exploring%20Sales%20and%20Customer%20Insights%20with%20Tableau&url=%2f%2flocalhost%3a1313%2fprojects%2fsales_dashboard%2f">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Exploring%20Sales%20and%20Customer%20Insights%20with%20Tableau: %2f%2flocalhost%3a1313%2fprojects%2fsales_dashboard%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=Exploring%20Sales%20and%20Customer%20Insights%20with%20Tableau&amp;body=Check%20out%20this%20site %2f%2flocalhost%3a1313%2fprojects%2fsales_dashboard%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+    </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/Kolinhtetwin" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/linhtetwin/" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            &copy; 2024  All rights reserved
+            
+        </div>
+    </div>
+</div></footer></div><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+<script src="/js/contact.js"></script>
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matplotlib on Lin Htet Win</title>
-    <link>/tags/matplotlib/</link>
+    <link>//localhost:1313/tags/matplotlib/</link>
     <description>Recent content in Matplotlib on Lin Htet Win</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SpaceX Rocket Analysis</title>
-      <link>/projects/spacex/</link>
+      <link>//localhost:1313/projects/spacex/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>/projects/spacex/</guid>
+      <guid>//localhost:1313/projects/spacex/</guid>
       <description>This is the final capstone project where I have to utilize the data analysis tools that I learned from IBM Data Science. The things I have to do in this project are:&#xA;Data collection with API and web scraping Data wrangling Exploratory data analysis using SQL EDA data visualization using Python Pandas and Matplotlib Launch sites analysis with Folium-Interactive Visual Analytics and Plotly Dash Machine learning landing prediction Data collection with API and web scraping First, I request the necessary data from the SpaceX REST API.</description>
     </item>
   </channel>

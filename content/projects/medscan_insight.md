@@ -24,7 +24,7 @@ image: /projects/medscan_insight/medscan_logo.png
 description: "A web application designed to predict the disease with symptoms."
 toc: 
 ---
-### About application
+
 This project represents the culmination of my academic journey as a Bachelor's degree student, serving as the final year project that synthesizes and applies the knowledge and skills acquired throughout my undergraduate studies.
 
 **MedScan Insight** is a web application designed to predict diseases based on the user's symptoms. It utilizes machine learning to make predictions and is built on the Flask framework. The dataset used for training and testing was obtained from the Kaggle dataset [Predict Disease Symptom](https://www.kaggle.com/datasets/karthikudyawar/disease-symptom-prediction). It was trained and tested using a decision tree algorithm, which is also employed to ask symptom-related questions based on the user's initial input.

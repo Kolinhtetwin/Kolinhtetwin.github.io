@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pandas on Lin Htet Win</title>
-    <link>/tags/pandas/</link>
+    <link>//localhost:1313/tags/pandas/</link>
     <description>Recent content in Pandas on Lin Htet Win</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/pandas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MedScan Insight</title>
-      <link>/projects/medscan_insight/</link>
+      <link>//localhost:1313/projects/medscan_insight/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>/projects/medscan_insight/</guid>
-      <description>About application This project represents the culmination of my academic journey as a Bachelor&amp;rsquo;s degree student, serving as the final year project that synthesizes and applies the knowledge and skills acquired throughout my undergraduate studies.&#xA;MedScan Insight is a web application designed to predict diseases based on the user&amp;rsquo;s symptoms. It utilizes machine learning to make predictions and is built on the Flask framework. The dataset used for training and testing was obtained from the Kaggle dataset Predict Disease Symptom.</description>
+      <guid>//localhost:1313/projects/medscan_insight/</guid>
+      <description>This project represents the culmination of my academic journey as a Bachelor&amp;rsquo;s degree student, serving as the final year project that synthesizes and applies the knowledge and skills acquired throughout my undergraduate studies.&#xA;MedScan Insight is a web application designed to predict diseases based on the user&amp;rsquo;s symptoms. It utilizes machine learning to make predictions and is built on the Flask framework. The dataset used for training and testing was obtained from the Kaggle dataset Predict Disease Symptom.</description>
     </item>
     <item>
       <title>SpaceX Rocket Analysis</title>
-      <link>/projects/spacex/</link>
+      <link>//localhost:1313/projects/spacex/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>/projects/spacex/</guid>
+      <guid>//localhost:1313/projects/spacex/</guid>
       <description>This is the final capstone project where I have to utilize the data analysis tools that I learned from IBM Data Science. The things I have to do in this project are:&#xA;Data collection with API and web scraping Data wrangling Exploratory data analysis using SQL EDA data visualization using Python Pandas and Matplotlib Launch sites analysis with Folium-Interactive Visual Analytics and Plotly Dash Machine learning landing prediction Data collection with API and web scraping First, I request the necessary data from the SpaceX REST API.</description>
     </item>
   </channel>

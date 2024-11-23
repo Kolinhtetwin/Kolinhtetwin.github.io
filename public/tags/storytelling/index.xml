@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storytelling on Lin Htet Win</title>
+    <link>//localhost:1313/tags/storytelling/</link>
+    <description>Recent content in Storytelling on Lin Htet Win</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/storytelling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring Sales and Customer Insights with Tableau</title>
+      <link>//localhost:1313/projects/sales_dashboard/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/projects/sales_dashboard/</guid>
+      <description>In today’s data-driven world, businesses thrive on visual analytics to make informed decisions. I&amp;rsquo;m thrilled to showcase two dynamic dashboards (view here) that I created during my Tableau learning journey with Data with Baraa. These dashboards provide comprehensive insights into sales performance and customer metrics, empowering businesses to make data-driven decisions. Let&amp;rsquo;s explore the specifics of these projects and discover how you can leverage these insights.&#xA;Project Overview The primary goal of these dashboards was to analyze and track performance in 2023 compared to 2022.</description>
+    </item>
+  </channel>
+</rss>
