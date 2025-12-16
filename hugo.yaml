@@ -63,7 +63,7 @@ params:
     intro: "Hi, my name is"
     title: "Lin Htet Win"
     subtitle: "Passionate Data Analyst"
-    content: "A passionate data analyst. I tend to make use of complex data to build the comprehensive models and insightful visualizations that illuminate trends and patterns."
+    content: "A Data Analyst with over a year of experience in transforming complex datasets into clear, actionable insights. I leverage Python, SQL, and Power BI to build predictive models, dashboards, and data-driven solutions. Certified in Google Advanced Data Analytics."
     image: /images/linhtetwin_about_crop.jpg
     bottomImage:
       enable: false
