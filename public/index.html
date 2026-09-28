@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<meta name="generator" content="Hugo 0.123.7"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+	<meta name="generator" content="Hugo 0.152.2"><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -29,14 +29,17 @@
 
 
 
-<meta property="og:title" content="Lin Htet Win" />
-<meta property="og:description" content="My portfolio website" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="//localhost:1313/" /><meta property="og:site_name" content="Lin Htet Win" />
+<meta property="og:url" content="/">
+  <meta property="og:site_name" content="Lin Htet Win">
+  <meta property="og:title" content="Lin Htet Win">
+  <meta property="og:description" content="My portfolio website">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Lin Htet Win"/>
-<meta name="twitter:description" content="My portfolio website"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lin Htet Win">
+  <meta name="twitter:description" content="My portfolio website">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -46,6 +49,8 @@
 <link rel="stylesheet" href="/css/theme.css" media="all">
 
 
+
+<link rel="stylesheet" href="/style.css">
 
 
 <style>
@@ -169,7 +174,7 @@ Lin Htet Win
     <nav class="pt-3 navbar navbar-expand-lg animate">
         <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
             
-            <a class="navbar-brand primary-font text-wrap" href="//localhost:1313/">
+            <a class="navbar-brand primary-font text-wrap" href="/">
                 
                 Lin Htet Win
                 
@@ -192,7 +197,7 @@ Lin Htet Win
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:1313/#about" aria-label="about">
+                        <a class="nav-link" href="/#about" aria-label="about">
                             About me
                         </a>
                     </li>
@@ -200,7 +205,7 @@ Lin Htet Win
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:1313/#experience"
+                        <a class="nav-link" href="/#experience"
                             aria-label="experience">
                             Experience
                         </a>
@@ -209,7 +214,7 @@ Lin Htet Win
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:1313/#education"
+                        <a class="nav-link" href="/#education"
                             aria-label="education">
                             Education
                         </a>
@@ -218,7 +223,7 @@ Lin Htet Win
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:1313/#projects"
+                        <a class="nav-link" href="/#projects"
                             aria-label="projects">
                             Projects
                         </a>
@@ -227,7 +232,7 @@ Lin Htet Win
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:1313/#achievements"
+                        <a class="nav-link" href="/#achievements"
                             aria-label="achievements">
                             Certificates
                         </a>
@@ -236,7 +241,7 @@ Lin Htet Win
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:1313/#contact"
+                        <a class="nav-link" href="/#contact"
                             aria-label="contact">
                             Contact
                         </a>
@@ -292,10 +297,19 @@ Lin Htet Win
                     Passionate Data Analyst
                 </h3>
                 <p class="hero-content">
-                    A passionate data analyst. I tend to make use of complex data to build the comprehensive models and insightful visualizations that illuminate trends and patterns.
+                    A Data Analyst with over a year of experience in transforming complex datasets into clear, actionable insights. I leverage Python, SQL, and Power BI to build predictive models, dashboards, and data-driven solutions. Certified in Google Advanced Data Analytics.
                 </p>
                 <div class="row">
-                    
+                    <div class="col-auto h-100">
+                        
+                        <a href="https://drive.google.com/file/d/1CEB02B6pYYTocUi0M6Wl21h1lCMjbZQK/view?usp=sharing" class="btn" download
+			  
+                          target="_blank"
+                          >
+                            Resume
+                        </a>
+                        
+                    </div>
                     <div class="col-auto px-0 h-100"><span>
     
     <span class="px-1">
@@ -389,33 +403,50 @@ Lin Htet Win
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-8 col-lg-8 py-5">
                 <div class="experience-container px-3 pt-2">
-                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="experience-tabs" role="tablist">
                         
                         
                         <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link active bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
+                            <button
+                                class="nav-link active bg-transparent"
+                                id="experience-tab-0"
+                                type="button"
+                                role="tab"
                                 data-bs-toggle="pill"
-                                id='Royal-Lwin-Brother-Co.,Ltd-May-2020---August-2022-tab'
-                                data-bs-target='#pills-Royal-Lwin-Brother-Co.,Ltd-May-2020---August-2022'
-                                aria-controls='Royal-Lwin-Brother-Co.,Ltd-May-2020---August-2022' 
+                                data-bs-target="#experience-tab-0-pane"
+                                aria-controls="experience-tab-0-pane"
+                                aria-selected="true"
                             >
                                 Royal Lwin Brother Co.,Ltd
-                            </div>
+                            </button>
                         </li>
                         
                         
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <button
+                                class="nav-link bg-transparent"
+                                id="experience-tab-1"
+                                type="button"
+                                role="tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#experience-tab-1-pane"
+                                aria-controls="experience-tab-1-pane"
+                                aria-selected="false"
+                            >
+                                Dauntless Discovery International
+                            </button>
+                        </li>
+                        
                     </ul>
-                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
+                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="experience-tab-content">
                         
                         
-                        <div 
-                            class="tab-pane fade show active bg-transparent" 
+                        <div
+                            class="tab-pane fade show active bg-transparent"
+                            id="experience-tab-0-pane"
                             role="tabpanel"
-                            id='pills-Royal-Lwin-Brother-Co.,Ltd-May-2020---August-2022'
-                            aria-labelledby='pills-Royal-Lwin-Brother-Co.,Ltd-May-2020---August-2022-tab'
+                            aria-labelledby="experience-tab-0"
+                            tabindex="0"
                         >
                             <div>
                                 <span class="h4">Operational Assistant Manager</span>
@@ -425,11 +456,11 @@ Lin Htet Win
                                     <small>May 2020 - August 2022</small>
                                     
                                     <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title=Working&#32;as&#32;a&#32;Operational&#32;Assistant&#32;Manager&#32;at&#32;Royal&#32;Lwin&#32;Brother&#32;Co.,Ltd
+                                        <span
+                                            style="cursor: pointer;"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            data-bs-original-title="Working as a Operational Assistant Manager at Royal Lwin Brother Co.,Ltd"
                                         >
                                             <i class="fas fa-info-circle fa-xs"></i>
                                         </span>
@@ -440,14 +471,58 @@ Lin Htet Win
                                 
                             </div>
 
+                            
                             <p>I worked as a operational assistant manager at Royal Lwin Brother Co., Ltd in Yangon, Myanmar. In this role, I:</p>
 <ul>
 <li>Led a team of 6 employees, providing guidance and oversight in daily operations.</li>
 <li>Collaborated with cross-functional teams to achieve business goals.</li>
 <li>Analyzed previous 2-year data to make informed decisions and optimize budget allocation across 6 categories.</li>
 </ul>
+                            
                         </div>
                         
+                        
+                        <div
+                            class="tab-pane fade bg-transparent"
+                            id="experience-tab-1-pane"
+                            role="tabpanel"
+                            aria-labelledby="experience-tab-1"
+                            tabindex="0"
+                        >
+                            <div>
+                                <span class="h4">Data Analyst</span>
+                                <small>-</small>
+                                <a href="" target="_blank">Dauntless Discovery International</a>
+                                <div class="pb-1">
+                                    <small>December 2024 - June 2026</small>
+                                    
+                                    <span class="p-2">
+                                        <span
+                                            style="cursor: pointer;"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            data-bs-original-title="Working as a Data Analyst at Dauntless Discovery International"
+                                        >
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+
+                                
+                            </div>
+
+                            
+                            <div class="pt-2">
+                                <p>I worked as a data analyst at DDI in Yangon, Myanmar. In this role, I:</p>
+<ul>
+<li>Led a team of 6 employees, providing guidance and oversight in daily operations.</li>
+<li>Collaborated with cross-functional teams to achieve business goals.</li>
+<li>Analyzed previous 2-year data to make informed decisions and optimize budget allocation across 6 categories.</li>
+</ul>
+                            </div>
+                            
+                        </div>
                         
                     </div>
                 </div>
@@ -455,7 +530,6 @@ Lin Htet Win
         </div>
     </div>
 </section>
-
 
 <section id="education" class="py-5">
     <div class="container">
@@ -575,7 +649,8 @@ Lin Htet Win
                         </div>
                         <h5 class="card-title bg-transparent">Exploring Sales and Customer Insights with Tableau</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            In today’s data-driven world, businesses thrive on visual analytics to make informed decisions. …
+                            <p>In today’s data-driven world, businesses thrive on visual analytics to make informed
+decisions. …</p>
                         </div>
                     </div>
                     <div class="card-footer py-3">
@@ -620,7 +695,7 @@ Lin Htet Win
                         </div>
                         <h5 class="card-title bg-transparent">MedScan Insight</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            This project represents the culmination of my academic journey as a Bachelor&rsquo;s degree student, …
+                            <p>This project represents the culmination of my academic journey as a Bachelor&rsquo;s degree student, …</p>
                         </div>
                     </div>
                     <div class="card-footer py-3">
@@ -663,7 +738,7 @@ Lin Htet Win
                         </div>
                         <h5 class="card-title bg-transparent">SpaceX Rocket Analysis</h5>
                         <div class="card-text bg-transparent secondary-font">
-                            This is the final capstone project where I have to utilize the data analysis tools that I learned …
+                            <p>This is the final capstone project where I have to utilize the data analysis tools that I learned …</p>
                         </div>
                     </div>
                     <div class="card-footer py-3">
@@ -897,7 +972,7 @@ Lin Htet Win
 </div><div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
-            &copy; 2024  All rights reserved
+            &copy; 2026  All rights reserved
             
         </div>
     </div>

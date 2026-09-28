@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Interactive Dashboards on Lin Htet Win</title>
-    <link>//localhost:1313/tags/interactive-dashboards/</link>
+    <link>/tags/interactive-dashboards/</link>
     <description>Recent content in Interactive Dashboards on Lin Htet Win</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/interactive-dashboards/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/interactive-dashboards/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploring Sales and Customer Insights with Tableau</title>
-      <link>//localhost:1313/projects/sales_dashboard/</link>
+      <link>/projects/sales_dashboard/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/sales_dashboard/</guid>
-      <description>In today’s data-driven world, businesses thrive on visual analytics to make informed decisions. I&amp;rsquo;m thrilled to showcase two dynamic dashboards (view here) that I created during my Tableau learning journey with Data with Baraa. These dashboards provide comprehensive insights into sales performance and customer metrics, empowering businesses to make data-driven decisions. Let&amp;rsquo;s explore the specifics of these projects and discover how you can leverage these insights.&#xA;Project Overview The primary goal of these dashboards was to analyze and track performance in 2023 compared to 2022.</description>
+      <guid>/projects/sales_dashboard/</guid>
+      <description>&lt;p&gt;In today’s data-driven world, businesses thrive on visual analytics to make informed&#xA;decisions. I&amp;rsquo;m thrilled to showcase two dynamic dashboards (view &lt;a href=&#34;https://public.tableau.com/views/Sales_Dashboard_17322898738320/SalesDashboard?:language=en-GB&amp;amp;:sid=&amp;amp;:redirect=auth&amp;amp;:display_count=n&amp;amp;:origin=viz_share_link&#34;&gt;here&lt;/a&gt;) that I created during my&#xA;Tableau learning journey with &lt;strong&gt;Data with Baraa&lt;/strong&gt;. These dashboards provide comprehensive&#xA;insights into sales performance and customer metrics, empowering businesses to make&#xA;data-driven decisions. Let&amp;rsquo;s explore the specifics of these projects and discover&#xA;how you can leverage these insights.&lt;/p&gt;&#xA;&lt;hr&gt;&#xD;&#xA;&lt;h3 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h3&gt;&#xA;&lt;p&gt;The primary goal of these dashboards was to analyze and track performance in 2023&#xA;compared to 2022. This project features two key dashboards: Sales Analysis and&#xA;Customer Analysis, aiming to deliver a view of:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

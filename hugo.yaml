@@ -11,7 +11,8 @@ outputs:
     - "HTML"
   
     
-Paginate: 3
+pagination:
+  pagerSize: 3
 enableRobotsTXT: true
 
 markup:
@@ -27,6 +28,7 @@ params:
   favicon: "/logo.png"
   
   animate: true
+  customCSS: true
 
   font:
     fontSize: 1rem # default: 1rem
@@ -125,8 +127,6 @@ params:
           - Led a team of 6 employees, providing guidance and oversight in daily operations.
           - Collaborated with cross-functional teams to achieve business goals.
           - Analyzed previous 2-year data to make informed decisions and optimize budget allocation across 6 categories.
-    # title: "Custom Name"
-    items:
       - job: "Data Analyst"
         company: "Dauntless Discovery International"
         date: "December 2024 - June 2026"

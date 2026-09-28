@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQL on Lin Htet Win</title>
-    <link>//localhost:1313/tags/sql/</link>
+    <link>/tags/sql/</link>
     <description>Recent content in SQL on Lin Htet Win</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploring Sales and Customer Insights with Tableau</title>
-      <link>//localhost:1313/projects/sales_dashboard/</link>
+      <link>/projects/sales_dashboard/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/sales_dashboard/</guid>
-      <description>In today’s data-driven world, businesses thrive on visual analytics to make informed decisions. I&amp;rsquo;m thrilled to showcase two dynamic dashboards (view here) that I created during my Tableau learning journey with Data with Baraa. These dashboards provide comprehensive insights into sales performance and customer metrics, empowering businesses to make data-driven decisions. Let&amp;rsquo;s explore the specifics of these projects and discover how you can leverage these insights.&#xA;Project Overview The primary goal of these dashboards was to analyze and track performance in 2023 compared to 2022.</description>
+      <guid>/projects/sales_dashboard/</guid>
+      <description>&lt;p&gt;In today’s data-driven world, businesses thrive on visual analytics to make informed&#xA;decisions. I&amp;rsquo;m thrilled to showcase two dynamic dashboards (view &lt;a href=&#34;https://public.tableau.com/views/Sales_Dashboard_17322898738320/SalesDashboard?:language=en-GB&amp;amp;:sid=&amp;amp;:redirect=auth&amp;amp;:display_count=n&amp;amp;:origin=viz_share_link&#34;&gt;here&lt;/a&gt;) that I created during my&#xA;Tableau learning journey with &lt;strong&gt;Data with Baraa&lt;/strong&gt;. These dashboards provide comprehensive&#xA;insights into sales performance and customer metrics, empowering businesses to make&#xA;data-driven decisions. Let&amp;rsquo;s explore the specifics of these projects and discover&#xA;how you can leverage these insights.&lt;/p&gt;&#xA;&lt;hr&gt;&#xD;&#xA;&lt;h3 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h3&gt;&#xA;&lt;p&gt;The primary goal of these dashboards was to analyze and track performance in 2023&#xA;compared to 2022. This project features two key dashboards: Sales Analysis and&#xA;Customer Analysis, aiming to deliver a view of:&lt;/p&gt;</description>
     </item>
     <item>
       <title>MedScan Insight</title>
-      <link>//localhost:1313/projects/medscan_insight/</link>
+      <link>/projects/medscan_insight/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/medscan_insight/</guid>
-      <description>This project represents the culmination of my academic journey as a Bachelor&amp;rsquo;s degree student, serving as the final year project that synthesizes and applies the knowledge and skills acquired throughout my undergraduate studies.&#xA;MedScan Insight is a web application designed to predict diseases based on the user&amp;rsquo;s symptoms. It utilizes machine learning to make predictions and is built on the Flask framework. The dataset used for training and testing was obtained from the Kaggle dataset Predict Disease Symptom.</description>
+      <guid>/projects/medscan_insight/</guid>
+      <description>&lt;p&gt;This project represents the culmination of my academic journey as a Bachelor&amp;rsquo;s degree student, serving as the final year project that synthesizes and applies the knowledge and skills acquired throughout my undergraduate studies.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;MedScan Insight&lt;/strong&gt; is a web application designed to predict diseases based on the user&amp;rsquo;s symptoms. It utilizes machine learning to make predictions and is built on the Flask framework. The dataset used for training and testing was obtained from the Kaggle dataset &lt;a href=&#34;https://www.kaggle.com/datasets/karthikudyawar/disease-symptom-prediction&#34;&gt;Predict Disease Symptom&lt;/a&gt;. It was trained and tested using a decision tree algorithm, which is also employed to ask symptom-related questions based on the user&amp;rsquo;s initial input.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SpaceX Rocket Analysis</title>
-      <link>//localhost:1313/projects/spacex/</link>
+      <link>/projects/spacex/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/projects/spacex/</guid>
-      <description>This is the final capstone project where I have to utilize the data analysis tools that I learned from IBM Data Science. The things I have to do in this project are:&#xA;Data collection with API and web scraping Data wrangling Exploratory data analysis using SQL EDA data visualization using Python Pandas and Matplotlib Launch sites analysis with Folium-Interactive Visual Analytics and Plotly Dash Machine learning landing prediction Data collection with API and web scraping First, I request the necessary data from the SpaceX REST API.</description>
+      <guid>/projects/spacex/</guid>
+      <description>&lt;p&gt;This is the final capstone project where I have to utilize the data analysis tools that I learned from IBM Data Science. The things I have to do in this project are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Data collection with API and web scraping&lt;/li&gt;&#xA;&lt;li&gt;Data wrangling&lt;/li&gt;&#xA;&lt;li&gt;Exploratory data analysis using SQL&lt;/li&gt;&#xA;&lt;li&gt;EDA data visualization using Python Pandas and Matplotlib&lt;/li&gt;&#xA;&lt;li&gt;Launch sites analysis with Folium-Interactive Visual Analytics and Plotly Dash&lt;/li&gt;&#xA;&lt;li&gt;Machine learning landing prediction&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;data-collection-with-api-and-web-scraping&#34;&gt;Data collection with API and web scraping&lt;/h2&gt;&#xA;&lt;p&gt;First, I request the necessary data from the SpaceX REST API.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
