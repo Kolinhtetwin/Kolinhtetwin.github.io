@@ -37,7 +37,11 @@
                             <div>
                                 <span class="h4">{{ .job }}</span>
                                 <small>-</small>
-                                <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
+                                {{ if .companyUrl }}
+                                    <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
+                                {{ else }}
+                                    <span>{{ .company }}</span>
+                                {{ end }}
                                 <div class="pb-1">
                                     <small>{{ .date }}</small>
                                     {{ if .info.enable | default true }}
